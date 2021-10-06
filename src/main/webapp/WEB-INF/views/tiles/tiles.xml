@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <!-- base define-->
+    <definition name="template-def"
+                template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/views/tiles/templates/defaultHeader.jsp" />
+        <put-attribute name="menu"
+                       value="/WEB-INF/views/tiles/templates/defaultMenu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/views/tiles/templates/defaultFooter.jsp" />
+    </definition>
+
+    <!-- site view define-->
+    <definition name="HomeSite" extends="template-def">
+        <put-attribute name="title" value="Welcome to SeesunIT" />
+        <put-attribute name="body"
+                       value="/WEB-INF/views/sites/home.jsp" />
+    </definition>
+
+    <definition name="LoginSite" extends="template-def">
+        <put-attribute name="title" value="Welcome to SeesunIT" />
+        <put-attribute name="body"
+                       value="/WEB-INF/views/sites/login.jsp" />
+    </definition>
+
+    <definition name="RegisterSite" extends="template-def">
+        <put-attribute name="title" value="Welcome to SeesunIT" />
+        <put-attribute name="body"
+                       value="/WEB-INF/views/sites/register.jsp" />
+    </definition>
+
+    <definition name="NotifySite" extends="template-def">
+        <put-attribute name="title" value="Welcome to SeesunIT" />
+        <put-attribute name="body"
+                       value="/WEB-INF/views/sites/notify.jsp" />
+    </definition>
+
+    <definition name="home" extends="template-def">
+        <put-attribute name="title" value="Welcome to SeesunIT" />
+        <put-attribute name="body"
+                       value="/WEB-INF/views/sites/home.jsp" />
+    </definition>
+
+    <!-- post view define-->
+    <definition name="PostList" extends="template-def">
+        <put-attribute name="title" value="Welcome to SeesunIT" />
+        <put-attribute name="body"
+                       value="/WEB-INF/views/posts/list.jsp" />
+    </definition>
+    <definition name="PostAddOrEdit" extends="template-def">
+        <put-attribute name="title" value="Welcome to SeesunIT" />
+        <put-attribute name="body"
+                       value="/WEB-INF/views/posts/addOrEdit.jsp" />
+    </definition>
+    <definition name="PostPage" extends="template-def">
+        <put-attribute name="title" value="Welcome to SeesunIT" />
+        <put-attribute name="body"
+                       value="/WEB-INF/views/posts/page.jsp" />
+    </definition>
+
+</tiles-definitions>
